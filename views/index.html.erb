@@ -1,0 +1,7 @@
+<h2> <%= @greeting %></h2>
+
+<%= form_tag("/:word", method: "post") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:base_word) %>
+  <%= submit_tag("Submit") %>
+<% end %>
